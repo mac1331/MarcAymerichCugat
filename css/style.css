@@ -693,6 +693,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
   color: #fff;
 }
+#about .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #eee;
+  color: #222636;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
 
 /*--------------------------------------------------------------
 # Speakers Section
