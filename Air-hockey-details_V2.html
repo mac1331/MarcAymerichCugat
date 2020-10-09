@@ -85,7 +85,8 @@
                 <a href="https://youtu.be/z0zk5a-efhw"><i class="fa fa-youtube"></i></a>
               </div>
               <p>This project was the main work of the "Smarts Systems" lecture that I took at USN during my Erasmus exchange in Norway. Our main obective was to build an Air Hockey machine wich with you would be able to play againt it.</p>
-              <p>The project report is posted at the following  <a href="http://dronesonen.usn.no/?cat=52" > link</a></p>
+              <p>As a descrition of this project I will copy here the reports that we made with our team during the project development.</p>
+              <p>The original report should be posted at: <a href="http://dronesonen.usn.no/?cat=52" >Link</a></p>
               
             </div>
           </div>
@@ -93,7 +94,79 @@
         </div>
         
       </div>
-      
+      <div class="container">
+        <div class="details">
+          <div class="section-header">
+            <h6>Week 1 (22.08.2019)</h6>
+          </div>
+
+          <p>The first thing we did for the course was to form a multidisciplinary group, consisting of 6 members: </p>
+          <ul>
+            <li>Markus Liavik Kanton – (mechanical)</li>
+            <li>Alina Steshenko – (computer)</li>
+            <li>Kristian Alfheim – (computer)</li>
+            <li>Lenart Baraga – (electro) </li>
+            <li>Jon Azman – (electro)</li>
+            <li>Marc Aymerich – (electro)</li>
+          </ul>  
+          <p>We were instructed to brainstorm some ideas for what sort of project we would like to work on, and after some deliberation, we had 6 different ideas of various complexity: </p>
+          <ol>
+            <li>Rubik’s Cube Solver</li>
+            <li>Autonomous Robot Builder</li>
+            <li>Autonomous Sailboat</li>
+            <li>Following Drone</li>
+            <li>Autonomous Air Hockey</li>
+            <li>Autonomous Obstacle Avoiding Car</li>
+          </ol> 
+          <p>To decide on which idea to go for, we held a vote, in which the autonomous sailboat and autonomous air hockey emerged most popular. One of the lecturers of the subject, Dag, informed us that an autonomous sailboat would likely present too much of a challenge in terms of workload and complexity for this subject, and consequently we settled on the autonomous air hockey idea, and appropriately named our team “The Unbeatable Air Hockey Team”.  </p>
+          <p>With time to spare, we decided to begin with our ABC requirements. To facilitate an easy discussion for this we procured post-it notes, and found that we were able to come up with and agree on a number of requirements without great difficulty. The following list are the requirements we have settled on thus far: </p>
+          <ul>
+            <li>A Requirements 
+              <ul>
+                <li>The system shall be able to defend the goal. </li>
+                <li>The system shall prioritize defending the goal.</li>
+                <li>The system shall be able to attack.</li>
+                <li>The system shall be able to keep track of the disc.</li>
+                <li>The system shall be able to play against a human player.</li>
+                <li>The system shall be able to keep air pressure to keep the disc afloat.</li>
+                <li>The system shall be able to charge with cable via power outlet. </li>
+              </ul> 
+            </li>
+            <li>B Requirements 
+              <ul>
+                <li>The system shall be able to present the disc back onto the board in the event of a goal on either side. </li>
+                <li>The system shall be able to keep count on score with a score counter.</li>
+                <li>The system shall be able to keep time with a timer.</li>
+              </ul> 
+            </li>
+            <li>C Requirements
+              <ul>
+                <li>The system shall look appealing. </li>
+                <li>The system shall be able to be mobile.</li>
+                <li>The system shall be able to learn from its human enemy (machine learning).</li>
+                <li>The system shall be able to accept payment.</li>
+                <li>The system shall be able to produce a victory sound in the event of a goal.</li>
+                <li>The system shall be able to light up in the event of a goal.</li>
+                <li>The system shall be able to strategize.</li>
+                <li>The system shall be able to facilitate different playmodes (timer, score, etc.).</li>
+              </ul> 
+            </li>
+            </ul>  
+            <p>These are all, of course, subject to change as we progress in the project, depending on complications or ideas that emerge along the way. </p>
+            <p>Next, we began discussing what sort of subsystems we envisioned would ultimately compose our system, as well as what sort of components we would need to realize it. After some investigation, we came to the conclusion that we would have (at least) the following subsystems: </p>
+            <ul>
+              <li>Air flow system. </li>
+              <li>Stick movement system.</li>
+              <li>Disc tracking system.</li>
+              <li>User interface.</li>
+              <li>Disc retrieval system.</li>
+            </ul> 
+            <p>From our investigation we realized we would need components such as stepper motors, arduino to interface with the motors, raspberry pi for the camera tracking, and various other components and parts. </p>
+            <p>Finally, we discussed project management. To facilitate a simple platform to organize the tasks of the project, we decided to use Trello, and employ a simplified version of Scrum, wherein we make use of sprints of 2 week length, and weekly scrum meetings.</p>
+            <p>Once our meeting had concluded, the electro and computer students of the group went to ascertain what sort of components we had on campus; the stepper motors were of particular interest, and we had some time to spare to begin some very preliminary experimentation, namely just attempting to create the circuit and programming it to step. Furthermore, we were able to get our hands on a raspberry pi to begin experimenting with.  </p>
+
+        </div>
+      </div>
     </section>
     
   </main>
