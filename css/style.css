@@ -1131,6 +1131,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 20px;
 }
 
+#projects h4 {
+  font-weight: 600;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: 5px;
+  padding: 0 10px;
+}
+
+#projects h5 {
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: 5px;
+  padding: 0 10px;
+}
+
 #projects a {
   color: #152b79;
 }
