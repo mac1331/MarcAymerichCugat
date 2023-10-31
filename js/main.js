@@ -1,3 +1,5 @@
+
+
 jQuery(document).ready(function( $ ) {
 
   // Back to top button
@@ -33,7 +35,7 @@ jQuery(document).ready(function( $ ) {
 
   // Initiate the wowjs animation library
   new WOW().init();
-
+  
   // Initialize Venobox
   $('.venobox').venobox({
     bgcolor: '',
@@ -145,3 +147,38 @@ jQuery(document).ready(function( $ ) {
 // custom code
 
 });
+
+
+function calculateAge() {
+  // Obtén la fecha actual
+  const today = new Date();
+
+  // Fecha de nacimiento
+  const birthday = new Date(1998, 6, 9); // Ten en cuenta que los meses en JavaScript comienzan desde 0 (0 = enero, 1 = febrero, ..., 11 = diciembre)
+
+  // Calcula la diferencia de años
+  let age = today.getFullYear() - birthday.getFullYear();
+
+  // Comprueba si aún no ha sido su cumpleaños este año
+  if (
+    today.getMonth() < birthday.getMonth() ||
+    (today.getMonth() === birthday.getMonth() && today.getDate() < birthday.getDate())
+  ) {
+    age--;
+  }
+
+  return age;
+}
+  
+// Espera a que se cargue completamente el documento HTML
+document.addEventListener("DOMContentLoaded", function () {
+  // Obtén el elemento con el identificador "age-placeholder"
+  const agePlaceholder = document.getElementById("age-placeholder");
+
+  // Calcula la edad
+  const age = calculateAge();
+
+  // Actualiza el contenido del elemento con la edad calculada
+  agePlaceholder.textContent = age;
+});
+
